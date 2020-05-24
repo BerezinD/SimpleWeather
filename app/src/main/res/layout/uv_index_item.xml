@@ -8,14 +8,13 @@
         android:layout_margin="@dimen/space_between">
 
     <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="@dimen/small_square"
+            android:layout_height="@dimen/small_square"
             android:background="@drawable/oval_button"
             android:text="@string/mock_zero"
             android:textSize="@dimen/font_normal"
             android:textColor="@color/text_main"
-            android:gravity="center_horizontal|center_vertical"
-            android:padding="@dimen/margin_to_the_edge"/>
+            android:gravity="center_horizontal|center_vertical"/>
 
 
 </com.google.android.material.card.MaterialCardView>

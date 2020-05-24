@@ -7,4 +7,5 @@
     <dimen name="font_small">13sp</dimen>
     <dimen name="font_normal">21sp</dimen>
     <dimen name="margin_to_the_edge">40dp</dimen>
+    <dimen name="small_square">100dp</dimen>
 </resources>
