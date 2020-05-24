@@ -14,7 +14,7 @@
             android:layout_marginStart="@dimen/padding_for_main_units"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:text="@string/date_mock"
+            android:text="@string/mock_date"
             android:textColor="@color/text_muted"
             android:textSize="@dimen/font_small"/>
 
@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/current_date"
             app:layout_constraintStart_toStartOf="@id/current_date"
-            android:text="@string/location_mock"
+            android:text="@string/mock_location"
             android:textColor="@color/text_main"
             android:textSize="@dimen/font_normal"/>
 
@@ -44,7 +44,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="@dimen/padding_for_main_units"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="@dimen/margin_to_the_edge"
             android:layout_marginEnd="@dimen/space_between"
             android:layout_marginBottom="@dimen/space_between"
             android:padding="@dimen/space_between"
@@ -64,7 +64,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginEnd="@dimen/padding_for_main_units"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="@dimen/margin_to_the_edge"
             android:layout_marginStart="@dimen/space_between"
             android:layout_marginBottom="@dimen/space_between"
             android:padding="@dimen/space_between"
@@ -86,7 +86,7 @@
             android:layout_marginStart="@dimen/padding_for_main_units"
             android:layout_marginTop="@dimen/space_between"
             android:layout_marginEnd="@dimen/space_between"
-            android:layout_marginBottom="40dp"
+            android:layout_marginBottom="@dimen/margin_to_the_edge"
             android:padding="@dimen/space_between"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/humidity_button"
@@ -106,7 +106,7 @@
             android:layout_marginEnd="@dimen/padding_for_main_units"
             android:layout_marginTop="@dimen/space_between"
             android:layout_marginStart="@dimen/space_between"
-            android:layout_marginBottom="40dp"
+            android:layout_marginBottom="@dimen/margin_to_the_edge"
             android:padding="@dimen/space_between"
             app:layout_constraintStart_toEndOf="@id/uv_index_button"
             app:layout_constraintTop_toBottomOf="@id/pressure_button"
@@ -127,6 +127,7 @@
             app:layout_constraintTop_toBottomOf="@id/uv_index_button"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="@string/graphic"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

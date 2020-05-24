@@ -6,6 +6,9 @@
     <color name="main_background">#32333D</color>
     <color name="fragment_background_start">#484B5B</color>
     <color name="fragment_background_end">#2C2D35</color>
+    <color name="graph_background_start">#73767F</color>
+    <color name="graph_background_end">#595C66</color>
     <color name="text_muted">#5D6972</color>
     <color name="text_main">#FFFFFF</color>
+    <color name="text_alpha_muted">#60FFFFFF</color>
 </resources>

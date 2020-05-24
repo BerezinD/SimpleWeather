@@ -1,8 +1,9 @@
-package com.tommy.simpleweather
+package com.tommy.simpleweather.ui.main
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
+import com.tommy.simpleweather.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
