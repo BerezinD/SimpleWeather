@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph"
+            app:startDestination="@id/navigation_home">
+
+    <fragment
+            android:id="@+id/navigation_home"
+            android:name="com.tommy.simpleweather.ui.home.HomeFragment"
+            android:label="fragment_home"
+            tools:layout="@layout/fragment_home">
+        <action
+                android:id="@+id/action_from_home_to_humidity"
+                app:destination="@id/navigation_humidity"
+                app:enterAnim="@anim/slide_left"
+                app:exitAnim="@anim/slide_right"
+                app:popEnterAnim="@anim/wait_anim"
+                app:popExitAnim="@anim/slide_right"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/navigation_humidity"
+            android:name="com.tommy.simpleweather.ui.home.HumidityFragment"
+            android:label="fragment_humidity"
+            tools:layout="@layout/fragment_humidity">
+    </fragment>
+
+    <fragment
+            android:id="@+id/navigation_statistics"
+            android:name="com.tommy.simpleweather.ui.statistics.StatisticsFragment"
+            android:label="fragment_statistics"
+            tools:layout="@layout/fragment_statistics">
+    </fragment>
+
+
+</navigation>
