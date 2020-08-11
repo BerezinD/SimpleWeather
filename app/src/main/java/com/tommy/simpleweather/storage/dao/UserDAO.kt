@@ -8,5 +8,5 @@ interface UserDAO {
 
     @Transaction
     @Query("SELECT * FROM user WHERE userId = :id")
-    fun getById(id: Int): UserWithCitiesAndForecast?
+    fun getById(id: Long): UserWithCitiesAndForecast?
 }

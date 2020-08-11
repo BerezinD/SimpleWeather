@@ -1,16 +1,17 @@
 package com.tommy.simpleweather.app
 
-import com.tommy.simpleweather.di.DaggerAppComponent
-import dagger.android.AndroidInjector
-import dagger.android.support.DaggerApplication
+import android.app.Application
+import com.tommy.simpleweather.di.appComponent
+import org.koin.android.ext.koin.androidContext
+import org.koin.core.context.startKoin
 
-class App : DaggerApplication() {
+class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
-    }
-
-    override fun applicationInjector(): AndroidInjector<out DaggerApplication> {
-        return DaggerAppComponent.builder().application(this).build()
+        startKoin {
+            androidContext(this@App)
+            modules(appComponent)
+        }
     }
 }

@@ -6,7 +6,7 @@ import com.tommy.simpleweather.models.User
 import com.tommy.simpleweather.models.Weather
 import com.tommy.simpleweather.storage.UserWithCitiesAndForecast
 
-class UserFromDb : Mapper<UserWithCitiesAndForecast, User> {
+internal object UserFromDb : Mapper<UserWithCitiesAndForecast, User> {
     override fun map(from: UserWithCitiesAndForecast): User {
         return User(
             id = from.user.id,
