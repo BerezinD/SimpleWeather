@@ -11,9 +11,11 @@ import kotlinx.android.synthetic.main.fragment_home.*
 class HomeFragment : Fragment(R.layout.fragment_home), View.OnClickListener {
 
     private lateinit var navController: NavController
+    private lateinit var viewModel: HomeViewModel
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         navController = Navigation.findNavController(view)
         humidity_button.setOnClickListener(this)
         visibility_button.setOnClickListener(this)
